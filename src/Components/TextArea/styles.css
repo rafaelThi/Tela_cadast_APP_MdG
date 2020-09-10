@@ -1,0 +1,39 @@
+
+.textarea-block{
+    position: relative;
+}
+
+.textarea-block + .textarea-block{
+margin-top: 1.4rem;
+}
+
+.textarea-block label{
+    font-size:  1.4rem;
+
+}
+
+.textarea-block textarea{
+    width: 90%;
+    height: 5rem;
+    min-height: 8rem;
+    margin-top: .8rem;
+    border-radius: .8rem;
+    background: #f8f8fc;
+    border: 1px solid black;
+    outline: 0;
+    resize: vertical;
+    padding: 1.2rem 1.6rem;
+    font: 1.6rem Arvchivo;
+    margin-left: -.2rem;
+    /* margin-bottom: -9rem; */
+}
+.textarea-block:focus-within::after{
+   content: '';
+    width: calc(100% - 3.2rem);
+    height: 2px;
+    background: black;
+    position: absolute;
+    left: 1.6rem;
+    right: 1.6rem;
+    bottom: 7px;
+}
